@@ -15,7 +15,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   padding: 48px;
+
+  position: fixed;
+  width: 100%;
+  background-color: #09090a;
+  /* border: 1px solid red; */
 }
 
 button {
@@ -32,10 +38,10 @@ button {
   font-family: "Inter", sans-serif;
 }
 
-form {
+#form-habits {
   display: flex;
-  padding: 48px;
-  padding-top: 0;
+  padding: 182px 48px 48px;
+  width: fit-content;
 }
 
 .habits {
@@ -101,4 +107,10 @@ input:checked {
   /*tailwind/violet/400*/
 
   border: 2px solid #a78bfa;
+}
+/* RESPONSIVIDADE PELO CSS */
+@media (max-width: 570px) {
+  button div {
+    display: none;
+  }
 }

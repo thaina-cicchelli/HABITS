@@ -5,39 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js"></script>
     <title>Document</title>
   </head>
   <body>
     <header>
       <img src="./assets/logo.svg" alt="Logomarca do aplicativo Habits" />
-
       <button>
         <img src="./assets/plus.svg" alt="ícone sinal de mais roxo" />
-        Registrar meu dia
+        <div>Registrar meu dia</div>
       </button>
     </header>
-    <form>
+    <form id="form-habits">
       <div class="habits">
-        <div class="habit">🏃🏽</div>
-        <div class="habit">💧</div>
-        <div class="habit">🍎</div>
+        <div class="habit" data-name="run">🏃🏽</div>
+        <div class="habit" data-name="water">💧</div>
+        <div class="habit" data-name="food">🍎</div>
+        <div class="habit" data-name="sleep">💤</div>
+        <div class="habit" data-name="bathroom">🚽</div>
       </div>
 
-      <div class="days">
-        <div class="day">
-          <div>03/01</div>
-          <input type="checkbox" name="run" />
-          <input type="checkbox" name="water" />
-          <input type="checkbox" name="food" checked />
-        </div>
-
-        <div class="day">
-          <div>04/01</div>
-          <input type="checkbox" name="run" />
-          <input type="checkbox" name="water" />
-          <input type="checkbox" name="food" />
-        </div>
-      </div>
+      <div class="days"></div>
     </form>
+    <!-- COMO BOTAR UMA BIBLIOTECA -->
+    <!-- 1 PASSO COLAR O LINK DA BIBLIOTECA DO HTML -->
+    <!-- 2 PASSO SEGUIR AS INTRUÇÕES DA BIBLIOTECA OU 
+      "ESTUDAR" SOBRE ELA -->
+    <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
   </body>
 </html>
