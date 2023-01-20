@@ -21,7 +21,6 @@ header {
   position: fixed;
   width: 100%;
   background-color: #09090a;
-  /* border: 1px solid red; */
 }
 
 button {
@@ -36,6 +35,10 @@ button {
   gap: 12px;
 
   font-family: "Inter", sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 #form-habits {
@@ -53,8 +56,6 @@ button {
 }
 
 .habit {
-  /* border: 1px solid red; */
-
   width: 64px;
   height: 64px;
 
@@ -68,7 +69,6 @@ button {
 .days {
   display: flex;
   gap: 48px;
-  /* border: 1px solid red; */
   margin-left: 32px;
 }
 
@@ -101,14 +101,11 @@ input {
   background: #18181b;
 }
 
-/*pseudo-selector*/
 input:checked {
   background-color: #8b5cf6;
-  /*tailwind/violet/400*/
 
   border: 2px solid #a78bfa;
 }
-/* RESPONSIVIDADE PELO CSS */
 @media (max-width: 570px) {
   button div {
     display: none;
